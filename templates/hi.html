@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hi</title>
+</head>
+<body>
+
+<h1>Hi,{{name}}<h1>
+<h1>Hi,{{name|title}}<h1>
+<h1>Hi,{{name|upper}}<h1>
+<h1>Hi,{{name|upper|reverse}}<h1>
+
+<p>{{name*10}}<p>
+<p>{{1+12}}<p>
+
+    {% if name=='James' %}
+    welcome back
+    {% else %}
+    nice to meet you
+    {% endif %}
+
+    <p>Language ?</p>
+{% for x in list %}
+    {{x}}<br>
+    {% endfor %}
+
+
+
+
+
+</body>
+</html>
